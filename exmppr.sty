@@ -1,0 +1,116 @@
+% This is sty file while made by dilip puri for assignment, tutorial, labs, and report
+
+\def\fileversion{1.0}
+\def\filedate{03/08/2015}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{exmppr}[\filedate{} macros for assignment, tutorial, labs, and report made by dilip puri]
+
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{a4wide}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{graphics, graphicx}
+\usepackage{color}
+\usepackage{a4wide}
+\usepackage{hyperref}
+\usepackage{anysize}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage[us,12hr]{datetime}
+\usepackage{xcolor}
+\usepackage{anyfontsize}
+\usepackage{wrapfig}
+\usepackage{etex}
+\usepackage{tikz}
+\usepackage{rotating}
+\usepackage{marginnote}
+\usepackage[all]{background}
+\usepackage{answers}
+\usepackage{pgf}
+\DeclareSymbolFont{largesymbols}{OMX}{cmex}{m}{n}
+
+
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{xspace}
+\usepackage{exmppre}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{layouts}
+\usepackage{geometry}
+\geometry{top=1.6cm, left=14mm, right=14mm, bottom=1.4cm}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{newgray}{rgb}{0.7,0.75,0.7}
+
+\lstset{frame=none,
+  language=matlab,				% whatever language you can choose
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\let\@institutename\@empty
+\let\@coursename\@empty
+\let\@ccode\@empty
+\let\@profname\@empty
+\let\@type\@empty
+\let\@sem\@empty
+\let\@season\@empty
+\let\@batch\@empty
+
+
+\newcommand{\coursename}[1]{\def\@coursename{#1}}
+\newcommand{\institutename}[1]{\def\@institutename{#1}}
+\newcommand{\ccode}[1]{\def\@ccode{#1}}
+\newcommand{\type}[1]{\def\@type{#1}}
+\newcommand{\profname}[1]{\def\@profname{#1}}
+\newcommand{\sem}[1]{\def\@sem{#1}}
+\newcommand{\season}[1]{\def\@season{#1}}
+\newcommand{\batch}[1]{\def\@batch{#1}}
+
+% Command to make the header box.
+\newcommand{\institute}{\begin{center}\begin{LARGE} \@institutename \end{LARGE}\end{center}}
+\newcommand{\course}{\begin{flushright}\textbf{Course} - \@coursename \\
+\textbf{Course Code} - \@ccode \\ \textbf{\@profname} \end{flushright}}
+\newcommand{\detail}{\begin{center} \textsc{\@type} \end{center}\hrulefill}
+
+\AtBeginDocument{
+ \thispagestyle{plain}
+  \institute
+  \course
+  \detail
+  \rhead{\@type \-}
+  \lhead{\@coursename}
+  \rfoot{\thepage}
+  \cfoot{ }
+  \lfoot{IIITV-Sem\@sem-\@ccode-\@type-\@season-\@batch}
+  \pagestyle{fancy}
+  
+  \SetBgContents{IIITV/Sem-\@sem/\@ccode/\@type/\@season/\@batch}
+  \SetBgPosition{-0.8cm,-7.0cm}% Select location
+  \SetBgOpacity{1.0}% Select opacity
+  \SetBgAngle{90.0}% Select rotation of logo
+  \SetBgScale{2.0}
+}

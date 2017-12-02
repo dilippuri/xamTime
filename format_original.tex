@@ -1,0 +1,135 @@
+\documentclass{exmppr}
+\usepackage{tasks}
+\usepackage{tikz}
+\usepackage{epigraph}
+
+\institutename{Indian Institute of Information Technology, Vadodara}
+\sem{4}
+\coursename{Computer Networks}
+\ccode{CS208}
+\type{MidSem}
+\season{Winter}
+\batch{2013-14}
+
+\profname{Prof. J Bhatt}
+
+\newtheorem{exercise}{\bfseries}
+
+\begin{document}
+\begin{enumerate}
+\item \begin{enumerate}
+\item Which of the following is required to communicate between two computers?
+\begin{tasks}(1)
+\task Communications software
+\task Communications hardware
+\task Protocol
+\task Access to the medium
+\task All of the above
+\end{tasks}
+
+\item Which answer correctly lists the OSI protocol data units(PDUs) in order?
+\begin{tasks}(1)
+\task Data, Packet, Frame, Segment, Bit
+\task Bit, Data, Packet, Segment, Frame
+\task Data, Segment, Packet, Frame, Bit
+\task Bit, Frame, Segment, Packet, Data
+\end{tasks}
+
+\item Which of the following is not a disadvantage of wireless LAN?
+\begin{tasks}(1)
+\task Slower data transmission
+\task Higher error rate
+\task Interference from transmission of different computers
+\task All of the above
+\end{tasks}
+
+\item Match the following:\\
+\begin{center}
+\begin{tabular}{llll}
+a.&SMTP&(1)&Application\\
+b.&BGP&(2)&Transport Layer\\
+c.&TCP&(3)&Data-link Layer\\
+d.&PPP&(4)&Network Layer\\
+&&(5)&Physical Layer
+\end{tabular}
+\begin{tasks}(1)
+\task a-2, b-1, c-3, d-4
+\task a-1, b-4, c-2, d-3
+\task a-1, b-4, c-2, d-5
+\task a-2, b-4, c-1, d-3
+\task None of the above
+\end{tasks}
+\end{center}
+
+\item In the IPv4 addressing format, the number of networks allowed under Class C addresses
+\begin{tasks}(4)
+\task $2^{14}$
+\task $2^{7}$
+\task $2^{21}$
+\task $2^{24}$
+\end{tasks}
+
+\item One of the header fields in an IP datagram is the Time to Live(TTL) field. Which of the following statements best explains the need for his field?
+\begin{tasks}(1)
+\task to prioritize packets
+\task to reduce delays
+\task to optimize throughput
+\task to prevent packet looping
+\end{tasks}
+
+\item How equal access to the wire is managed in a collision-oriented environment such as the Ethernet?
+\begin{tasks}(1)
+\task The hosts are given equal access based on the circulation of a token; hosts can only transmit when they hold the token.
+\task Hosts are given prioritized access to wire based on their MAC address.
+\task Hosts are given equal access to the wire by being allowed to transmit at specified time intervals.
+\task Hosts signal their desire to transmit by sending a contention alert.
+\task Hosts check the wire for activity before attempting to send; if a collision happens they wait a random time period before attempting to send again.
+\end{tasks}
+
+\item Frames from one LAN can be transmitted to another LAN via the device
+\begin{tasks}(2)
+\task Router
+\task Bridge
+\task Repeater
+\task Modern
+\end{tasks}
+
+\item Which of the following technique is used for fragment?
+\begin{tasks}(1)
+\task one of the pieces that results when a router divides an IP datagram into smaller pieces for transmission across a network that cannot handle the original datagram size
+\task a technique used y protocols in which a lower level protocol accepts a message from a higher level protocol and places it in data portion of the low level frame
+\task a technique used in best-effort deliver systems to avoid endlessly looping packets
+\task All of the above
+\task None of the above
+\end{tasks}
+
+\item The dominant eigenvalue of a Markov matrix is
+\begin{tasks}(4)
+\task 0
+\task 1
+\task $\pi$
+\task $\infty$
+\end{tasks}
+
+\end{enumerate}
+\item Why would a protocol that uses the stop-and-wait mechanism have low throughput over satellite communications link?
+
+\item We want to send a 1000KB file(K=1000 and B is Byte) in 1KB packets. The distance is 10km and the signal propagation speed is $2*10^5 km/sec$. The bandwidth is 1.5Mb/sec.(M=1,000,000). How long will it take to send the file?
+
+\item Why was CSMA/CA developed?
+
+\item Create a diagram of the NRZ, NRZI AND Manchester encodings for the it pattern ``11010011''.
+
+\item What are the main advantages of \textit{spread spectrum} technique?
+
+
+\end{enumerate}
+\hrulefill
+
+\epigraph{``Invention is the most important product of man's creative brain. The ultimate purpose is the complete mastery of mind over the material world, the harnessing of human nature to human needs.''}{\textit{Nikola Tesla (My Inventions)}}
+
+\newpage
+\begin{center}\section*{Answers}\end{center}
+%\input{sol1.tex}
+
+\end{document}
