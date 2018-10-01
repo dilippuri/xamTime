@@ -107,7 +107,7 @@ Create PR for any of these if course directory is not available then make it wit
 Repo of all the exam papers for CSE and IT at SVNIT.
 
 ### MTech(CSE)
-- Distributed Systems
+- Distributed Computing
 - Intro to Information Security
 - Algorithms and Complexity
 - Advance Database Management
