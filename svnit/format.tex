@@ -6,66 +6,49 @@
 
 \institutename{Sardar Vallabhbhai National Institute of Technology, Surat}
 \sem{1}%which semester
-\coursename{Algorithms and Computational Complexity}%name of course
-\ccode{CO603}%course code
+\coursename{Intro to Computer Security}%name of course
+\ccode{CO605}%course code
 \type{MidSem}%endsem or midsemm
 \season{Summer}%winter, fall, summer, etc.
 \batch{2018-19}% batch 2013-14,2014-15,2015-16 etc
 
-\profname{Udai P Rao}%name of prof
+\profname{Sankita J Patel}%name of prof
 
 \newtheorem{exercise}{\bfseries}
 
 \begin{document}
 \begin{enumerate}
 
-\item \begin{enumerate}
-\item What are the certain criteria that algorithm has to follow? Discuss.
-
-\item The Euclid's algorithm for finding the GCD establishes that sum of the values of variables will drop very very fast in number of iterations.\\
-Comment on the above statement and discuss how number of iteration $\leq log_{3/2}(p+q)$? where p $\&$ q are input values to the algorithm.
-
-\end{enumerate}
-\item Let `n' be the number of files that can be stored on a sequential storage device such as tape. Let `$L_i$' be the length of each file where $1 \leq i \leq n$. Further, Mean Retrieval Time(MRT) is given by:\\
-{\centering $$MRT = \sum_{i=1}^{n}\sum_{j=1}^{i} L_i$$}\\
-According to difference ordering of files, MRT varies.
-\begin{enumerate} 
-\item How many ordering of files is/are possible?
-\item Out of all possible ordering of files which ordering gives and optimal result, which will minimize MRT?
-\item Provide an algorithm for this.
-\item Provide example illustration and time complexity of the algorithm.
-\end{enumerate}
-\item Recurrence relation of finding maximum and minimum number for a given array of size n is given as below. 
-Here, time T(n) is equal to the number of comparisons.\\
-{\centering $$
-  T(n) = \left \{
-  \begin{aligned}
-    &T(\lceil n/2 \rceil) + T(\lceil n/2 \rceil) + 2, n > 2 \\
-    &1, n = 2\\
-    &0, n = 1
-  \end{aligned} \right.
-$$}
+\item \textbf{Answer the following:}
 \begin{enumerate}
-\item Solve the given recurrence with back substitution method by taking n=2 as base case.
-\item Above recurrence is based on divide and conquer approach . Comment on the space complexity of this algorithm in comparison to naive algorithm.
+\item Consider the field $GF(2^4)$. Let field multiplication be performed modulo the irreducible polynomial $x^4 + x + 1$. Compute $(1101)^{-1}$
+
+\item A single bit error in exactly one block of ciphertext during transmission. How will this affect the recovery of plaintext in each of the following modes?\\
+Electronic CodeBook (ECB), CipherBlock Chaining (CBC)
+
+\item An old woman goes to the market and a horse steps on her basket and crushes the eggs. The rider offers to pay for the damages and asks her how many eggs she had brought. She does not remember the exact number,, but when she had taken them out two at a time, thee was one egg left. The same happened when she picked them out three, four, five and six at a time, but when she took them seven at a time they came out even. What is the smallest number of eggs she could have had?
+
+\item Comment on the security of Digital Signature Standard (DSS) with respect to key-only attack, known-message attack and chosen-message attack.
+
+\item Using the Vigenere cipher, encrypt the word ``explanation" using the key ``leg". What modifications should be done to apply Vernam cipher?
+\end{enumerate}
+\item \textbf{Answer the following (Any three):}
+\begin{enumerate} 
+\item Suppose two users Alice and Bob have the same RSA modulus n and suppose that their encryption exponents $e_A$ and $e_B$ are relatively prime. Charles wants to send the message m to Alice and Bob; so he encrypts to get $c_A \equiv m^{e_A}(mod n)$ and $c_B \equiv m^{e_B}(mod n)$. Show how Eve can find m if she intercepts $c_A$ and $c_B$.
+
+\item Naive Nelson uses RSA to receive a single ciphertext c, corresponding to the message m. His public modulus is n and his public encryption exponent is e. Since he feels guilty that his system was used only once he agrees to decrypt and ciphertext that someone sends him, as long as it is not c, and return the answer to that person. Evil Eve sends him the ciphertext $2^e c(mod n)$ and gets decrypted ciphertext. Show how this allows Eve to find m.
+\end{enumerate}
+\item \begin{enumerate}
+\item Suppose there are k students in a class. What is the minimum value of k such that the probability of at least two students having the same birthday is 50\%?
+\item How the result derived above can be used to decide security of the hash function?
 \end{enumerate}
 
 \item \begin{enumerate}
-\item Write down an algorithm for following statement:\\
-You are given `n' activities with their start and finish times. Select the maximum number of activities that can be performed by a single person, assuming that a person can only work on a single activity at a time.
-\item What is the time taken by the algorithm to execute?
+\item Prove that $60^{-1} mod 101$ = $60^{99} mod 101$
+\item Alice uses three consecutive permutations $[1 3 2]\circ[3 2 1]\circ[2 1 3]$. Which permutation Bob can use to reverse the process? ($\circ$ is the composition operation i.e applying second permutation after the first)
+\end{enumerate}
 \end{enumerate}
 
-\item The Longest Increasing Subsequence(LIS) problem is to find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in increasing order. For example, the length of LIS for {10, 22, 9, 33, 21, 50, 41, 60, 80} is 6 and LIS is {10, 22, 33, 50, 60, 80}. Find the optimal substructure. Write and explain recurrence relation or recursive equation for given problem.\\
-{\centering \textbf{OR}}
-\\
-Consider a variant of the matrix-chain multiplication problem in which the goal is to parenthesize the sequence of matrices so as to maximize, rather that minimize, the number of scalar multiplications. Does this problem exhibit optimal substructure? Justify your answer.
-
-\item How many people should be invited to a party on Mars, where a year is 669 Martian days long, in order to make it likely that there are two people (one matching pair) with the same birthday Give an analysis to above problem using indicator random variables.
-
-\item Using backtracking provide a solution for sum of subset problem. With m = 30 and w = {5, 10, 12, 13, 15, 18}, find all possible subset of w that sum to m. Draw state space tree for above problem.
-
-\end{enumerate}
 
 \newpage
 \begin{center}\section*{Answers}\end{center}

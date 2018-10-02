@@ -108,6 +108,6 @@ Repo of all the exam papers for CSE and IT at SVNIT.
 
 ### MTech(CSE)
 - Distributed Computing
-- Intro to Information Security
+- Intro to Computer Security
 - Algorithms and Complexity
 - Advance Database Management
