@@ -110,4 +110,4 @@ Repo of all the exam papers for CSE and IT at SVNIT.
 - Distributed Computing
 - Intro to Computer Security
 - Algorithms and Complexity
-- Advance Database Management
+- Advanced Database Management System
