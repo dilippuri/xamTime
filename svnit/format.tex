@@ -6,13 +6,13 @@
 
 \institutename{Sardar Vallabhbhai National Institute of Technology, Surat}
 \sem{1}%which semester
-\coursename{Distributed Computing}%name of course
-\ccode{CO601}%course code
+\coursename{Algorithms and Computational Complexity}%name of course
+\ccode{CO603}%course code
 \type{MidSem}%endsem or midsemm
 \season{Summer}%winter, fall, summer, etc.
 \batch{2018-19}% batch 2013-14,2014-15,2015-16 etc
 
-\profname{Udai P Rao \& Bavesh N Gohil}%name of prof
+\profname{Udai P Rao}%name of prof
 
 \newtheorem{exercise}{\bfseries}
 
@@ -20,72 +20,52 @@
 \begin{enumerate}
 
 \item \begin{enumerate}
-\item Why distribution is required? Clearly indicate your answer with set of reasons. Also enlist the problems faced because of distribution.
+\item What are the certain criteria that algorithm has to follow? Discuss.
 
-\item Differentiate between preemptive and non-preemptive precess migration. Which one is mostly possible in receiver initiated scheduling algorithm?
+\item The Euclid's algorithm for finding the GCD establishes that sum of the values of variables will drop very very fast in number of iterations.\\
+Comment on the above statement and discuss how number of iteration $\leq log_{3/2}(p+q)$? where p $\&$ q are input values to the algorithm.
 
-\item It is considered that all three approached of location policy of sender-initiated algorithms cause system instability at high system loads. Present you reasoning with valid statement.
 \end{enumerate}
+\item Let `n' be the number of files that can be stored on a sequential storage device such as tape. Let `$L_i$' be the length of each file where $1 \leq i \leq n$. Further, Mean Retrieval Time(MRT) is given by:\\
+{\centering $$MRT = \sum_{i=1}^{n}\sum_{j=1}^{i} L_i$$}\\
+According to difference ordering of files, MRT varies.
+\begin{enumerate} 
+\item How many ordering of files is/are possible?
+\item Out of all possible ordering of files which ordering gives and optimal result, which will minimize MRT?
+\item Provide an algorithm for this.
+\item Provide example illustration and time complexity of the algorithm.
+\end{enumerate}
+\item Recurrence relation of finding maximum and minimum number for a given array of size n is given as below. 
+Here, time T(n) is equal to the number of comparisons.\\
+{\centering $$
+  T(n) = \left \{
+  \begin{aligned}
+    &T(\lceil n/2 \rceil) + T(\lceil n/2 \rceil) + 2, n > 2 \\
+    &1, n = 2\\
+    &0, n = 1
+  \end{aligned} \right.
+$$}
+\begin{enumerate}
+\item Solve the given recurrence with back substitution method by taking n=2 as base case.
+\item Above recurrence is based on divide and conquer approach . Comment on the space complexity of this algorithm in comparison to naive algorithm.
+\end{enumerate}
+
 \item \begin{enumerate}
-\item Present a comparison among \textit{distributed OS, Network OS and Middleware-based OS}. Use the following parameters: Degree of Transparency, Same OS on all nodes, Number of copies of OS, Basis for communication, Resource Management, Scalability, and Openness.
-
-\item What do you mean by Secure multi-party Computation(SMC)? Present a scenario for secure multi-party computation to calculate average salary of employees of a company. Develop a protocol which should not reveal the individual's private information to any other employee during computation. Let us assume that the SMC for above application is restricted to four employees.
-\end{enumerate}
-\item \begin{enumerate}
-\item Differentiate between RPC and RMI.
-
-\item Explain following message communications with example: Persistent Synchronous, Transient Synchronous(delivery based).
-
-\item Define the following terms: hit rate, latency, clock skew, clock drift
-
-\item Explain Unix file sharing semantic with example.
-
-\item Define ``has happened before relation($<$)". Write down the Lamport's clock and vector clock value at each event in the following diagram.
-\end{enumerate}
+\item Write down an algorithm for following statement:\\
+You are given `n' activities with their start and finish times. Select the maximum number of activities that can be performed by a single person, assuming that a person can only work on a single activity at a time.
+\item What is the time taken by the algorithm to execute?
 \end{enumerate}
 
-\centering
-\begin{tikzpicture}[scale=1]
-\draw[->,>=stealth,thick] (-4,0) -- (8,0) ;
-\filldraw (-3,4) circle (2pt);
-\filldraw (-2.1,4) circle (2pt);
-\filldraw (.5,4) circle (2pt);
-\filldraw (3.4,4) circle (2pt);
-\filldraw (4.4,4) circle (2pt);
-\filldraw (6,4) circle (2pt);
-\filldraw (7,4) circle (2pt);
+\item The Longest Increasing Subsequence(LIS) problem is to find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in increasing order. For example, the length of LIS for {10, 22, 9, 33, 21, 50, 41, 60, 80} is 6 and LIS is {10, 22, 33, 50, 60, 80}. Find the optimal substructure. Write and explain recurrence relation or recursive equation for given problem.\\
+{\centering \textbf{OR}}
+\\
+Consider a variant of the matrix-chain multiplication problem in which the goal is to parenthesize the sequence of matrices so as to maximize, rather that minimize, the number of scalar multiplications. Does this problem exhibit optimal substructure? Justify your answer.
 
-\draw[->,>=stealth,thick] (-4,2) -- (8,2) ;
-\filldraw (-2.9,2) circle (2pt);
-\filldraw (-1.8,2) circle (2pt);
-\filldraw (-.9,2) circle (2pt);
-\filldraw (0,2) circle (2pt);
-\filldraw (1.5,2) circle (2pt);
-\filldraw (2.5,2) circle (2pt);
-\filldraw (6.8,2) circle (2pt);
+\item How many people should be invited to a party on Mars, where a year is 669 Martian days long, in order to make it likely that there are two people (one matching pair) with the same birthday Give an analysis to above problem using indicator random variables.
 
-\draw[->,>=stealth,thick] (-4,4) -- (8,4) ;
-\filldraw (-0.8,0) circle (2pt);
-\filldraw (0.5,0) circle (2pt);
-\filldraw (1,0) circle (2pt);
-\filldraw (2.5,0) circle (2pt);
-\filldraw (3.4,0) circle (2pt);
-\filldraw (6.9,0) circle (2pt);
+\item Using backtracking provide a solution for sum of subset problem. With m = 30 and w = {5, 10, 12, 13, 15, 18}, find all possible subset of w that sum to m. Draw state space tree for above problem.
 
-
-\draw[->,>=stealth,thick] (-2.1,4) -- (-1.8,2) ;
-\draw[->,>=stealth,thick] (0,2) -- (0.5,0) ;
-\draw[->,>=stealth,thick] (2.5,2) -- (3.4,4) ;
-\draw[->,>=stealth,thick] (3.4,0) -- (6,4) ;
-
-
-\node (A) at (9, 4) {A};
-\node (B) at (9, 2) {B};
-\node (C) at (9, 0) {C};
-
-
-
-\end{tikzpicture}
+\end{enumerate}
 
 \newpage
 \begin{center}\section*{Answers}\end{center}
